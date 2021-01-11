@@ -12,20 +12,15 @@ $ pip install cookiecutter
 
 The next command will ask for some input.  Enter the name of your tap:
 ```bash
-$ cookiecutter https://github.com/singer-io/singer-target-template.git
+$ cookiecutter https://github.com/solublecode/singer-target-template.git
 project_name [e.g. 'target-csv']: target-foobar
-```
-
-For the package_name, I just hit enter since tap_foobar is what I wanted:
-```bash
-package_name [target_foobar]:
 ```
 
 Now that the project exists, make a virtual environment:
 ```bash
 $ cd target-foobar
-$ python3 -m venv ~/.virtualenvs/target-foobar
-$ source ~/.virtualenvs/target-foobar/bin/activate
+$ python -m venv venv
+$ source ./venv/bin/activate
 ```
 Install the package:
 ```bash
